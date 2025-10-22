@@ -53,4 +53,18 @@ function filtraPerIniziale() {
     stampaTabella(filtrati, 'tabellaUtenti');
 }
 
+function filtraPerEta() {
+    var eta = document.getElementById('eta').value;
+    var filtrati = [];
+    for (var i = 0; i < anagraficaUtenti.length; i++) {
+        var utente = anagraficaUtenti[i];
+        if (eta == "" || Number(utente.eta) === Number(eta)) {
+            filtrati.push(utente);
+        }
+    }
+    stampaTabella(filtrati, 'tabellaUtenti');
+}
+
+
+
 
