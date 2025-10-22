@@ -32,12 +32,7 @@ function stampaTabella(dati, id) {
     });
 }
 
-function filtraPerIniziale() {
-    var lettera = document.getElementById('lettera').value.toUpperCase();
-    var filtrati = anagraficaUtenti.filter(function(utente) {
-        return lettera == "" || utente.cognome.toUpperCase().startsWith(lettera);
-    });
-    stampaTabella(filtrati, 'tabellaUtenti');
-}
+
+
 
 
