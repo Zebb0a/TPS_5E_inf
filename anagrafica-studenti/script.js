@@ -18,27 +18,28 @@ function stampaTabella(dati, id) {
 
     var intestazioni = ["Nome", "Cognome", "Età"];
     var rigaIntestazioni = tabella.insertRow();
-    intestazioni.forEach(function(testo) {
+    for (var i = 0; i < intestazioni.length; i++) {
         var th = document.createElement("th");
-        th.textContent = testo;
+        th.textContent = intestazioni[i];
         rigaIntestazioni.appendChild(th);
-    });
+    }
 
-    dati.forEach(function(utente) {
-    var riga = tabella.insertRow();
+    for (var i = 0; i < dati.length; i++) {
+        var utente = dati[i];
+        var riga = tabella.insertRow();
 
-    var cellaNome = document.createElement("td");
-    cellaNome.textContent = utente.nome;
-    riga.appendChild(cellaNome);
+        var cellaNome = document.createElement("td");
+        cellaNome.textContent = utente.nome;
+        riga.appendChild(cellaNome);
 
-    var cellaCognome = document.createElement("td");
-    cellaCognome.textContent = utente.cognome;
-    riga.appendChild(cellaCognome);
+        var cellaCognome = document.createElement("td");
+        cellaCognome.textContent = utente.cognome;
+        riga.appendChild(cellaCognome);
 
-    var cellaEta = document.createElement("td");
-    cellaEta.textContent = utente.eta;
-    riga.appendChild(cellaEta);
-    });
+        var cellaEta = document.createElement("td");
+        cellaEta.textContent = utente.eta;
+        riga.appendChild(cellaEta);
+    }
 }
 
 function filtraPerIniziale() {
@@ -46,25 +47,31 @@ function filtraPerIniziale() {
     var filtrati = [];
     for (var i = 0; i < anagraficaUtenti.length; i++) {
         var utente = anagraficaUtenti[i];
-        if (lettera == "" || utente.cognome.toUpperCase().startsWith(lettera)) {
+        if (lettera == "" || utente.cognome.toUpperCase().charAt(0) == lettera) {
             filtrati.push(utente);
         }
     }
     stampaTabella(filtrati, 'tabellaUtenti');
 }
 
-function filtraPerEta() {
-    var eta = document.getElementById('eta').value;
+function filtraMinori() {
     var filtrati = [];
     for (var i = 0; i < anagraficaUtenti.length; i++) {
         var utente = anagraficaUtenti[i];
-        if (eta == "" || Number(utente.eta) === Number(eta)) {
+        if (utente.eta < 18) {
             filtrati.push(utente);
         }
     }
     stampaTabella(filtrati, 'tabellaUtenti');
 }
 
-
-
-
+function filtraMaggiorenni() {
+    var filtrati = [];
+    for (var i = 0; i < anagraficaUtenti.length; i++) {
+        var utente = anagraficaUtenti[i];
+        if (utente.eta >= 18) {
+            filtrati.push(utente);
+        }
+    }
+    stampaTabella(filtrati, 'tabellaUtenti');
+}
