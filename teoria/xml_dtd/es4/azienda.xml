@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE azienda [
+    <!ELEMENT azienda (reparto+)>
+    <!ELEMENT reparto (responsabile,impiegato*,budget?)>
+    <!ATTLIST impiegato ruolo (junior | senior) #REQUIRED>
+    <!ELEMENT responsabile (#PCDATA)>
+    <!ELEMENT impiegato (#PCDATA)>
+    <!ELEMENT budget (#PCDATA)>
+]>
+
+<azienda>
+    <reparto>
+        <responsabile>marco</responsabile>
+        <impiegato ruolo="junior">matteo</impiegato>
+        <impiegato ruolo="senior">jacopo</impiegato>
+        <budget>50</budget>
+    </reparto>
+    <reparto>
+        <responsabile>riccardo</responsabile>
+    </reparto>
+</azienda>

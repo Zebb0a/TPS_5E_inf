@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="universita.dtd" type="application/xml-dtd"?>
+
+<universita>
+    <corso tipoCorso="triennale">
+        <docente>marco</docente>
+        <studente>
+            <nome>michele</nome>
+        </studente>
+        <studente>
+            <nome>mirco</nome>
+            <tesi>analisi dati</tesi>
+        </studente>
+    </corso>
+    <corso tipoCorso="magistrale">
+        <docente>mario</docente>
+        <studente>
+            <nome>federico</nome>
+        </studente>
+    </corso>
+    <corso tipoCorso="master">
+        <docente>giovanni</docente>
+        <studente>
+            <nome>maria</nome>
+        </studente>
+    </corso>
+</universita>

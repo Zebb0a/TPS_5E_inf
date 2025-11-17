@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE scuola [
+    <!ELEMENT scuola (classe+)>
+    <!ELEMENT classe (studente+)>
+    <!ELEMENT studente (nome,cognome,voto*)>
+    <!ATTLIST classe anno  CDATA #REQUIRED>
+    <!ATTLIST studente genere (M | F) #REQUIRED>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT cognome (#PCDATA)>
+    <!ELEMENT voto (#PCDATA)>
+]>
+
+<scuola>
+    <classe anno="2020">
+        <studente genere="M">
+            <nome>christian</nome>
+            <cognome>vodola</cognome>
+            <voto>10</voto>
+            <voto>9.5</voto>
+        </studente>
+        <studente genere="F">
+            <nome>cecilia</nome>
+            <cognome>esposito</cognome>
+            <voto>6</voto>
+            <voto>7</voto>
+        </studente>
+    </classe>
+</scuola>

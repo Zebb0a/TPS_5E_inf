@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE libreria [
+    <!ELEMENT libreria (libro+)>
+    <!ELEMENT libro (titolo,autore,anno,prezzo)>
+    <!ELEMENT titolo (#PCDATA)>
+    <!ELEMENT autore (#PCDATA)>
+    <!ELEMENT anno (#PCDATA)>
+    <!ELEMENT prezzo (#PCDATA)>
+]>
+<libreria>
+    <libro>
+        <titolo>le avventure di michele </titolo>
+        <autore>sebastie</autore>
+        <anno>1990</anno>
+        <prezzo>20</prezzo>
+    </libro>
+    <libro>
+        <titolo>le avventure di michele </titolo>
+        <autore>sebastie</autore>
+        <anno>1990</anno>
+        <prezzo>20</prezzo>
+    </libro>
+</libreria>

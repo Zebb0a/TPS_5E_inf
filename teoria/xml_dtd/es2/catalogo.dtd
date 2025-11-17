@@ -1,0 +1,6 @@
+<!ELEMENT libreria (libro+)>
+<!ELEMENT libro (nome,prezzo,descrizione?)>
+<!ATTLIST libro id ID #REQUIRED>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT prezzo (#PCDATA)>
+<!ELEMENT descrizione (#PCDATA)>

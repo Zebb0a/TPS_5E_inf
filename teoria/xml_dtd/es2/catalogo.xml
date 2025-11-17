@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="catalogo.dtd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<libreria>
+    <libro id="1">
+        <nome>marzi</nome>
+        <prezzo>10</prezzo>
+        <descrizione></descrizione>
+    </libro>
+    <libro id="2">
+        <nome>seba</nome>
+        <prezzo>100</prezzo>
+        <descrizione></descrizione>
+    </libro>
+</libreria>
