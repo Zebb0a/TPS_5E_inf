@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Anagrafica Utenti 5E</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="caricaDatiJSON();">
+
+    <div class="container">
+        <h1 class="titoloSovraimmagine">Anagrafica Utenti Classe 5E</h1>
+
+        <div class="blurred-text">
+            <div class="button-group">
+                <select id="lettera">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="J">J</option>
+                    <option value="K">K</option>
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="N">N</option>
+                    <option value="O">O</option>
+                    <option value="P">P</option>
+                    <option value="Q">Q</option>
+                    <option value="R">R</option>
+                    <option value="S">S</option>
+                    <option value="T">T</option>
+                    <option value="U">U</option>
+                    <option value="V">V</option>
+                    <option value="W">W</option>
+                    <option value="X">X</option>
+                    <option value="Y">Y</option>
+                    <option value="Z">Z</option>
+                </select>
+                <input type="button" value="Filtra Cognomi" onclick="filtraPerIniziale();">
+                <input type="button" value="Minori di 18" onclick="filtraMinori();">
+                <input type="button" value="18 o più" onclick="filtraMaggiorenni();">
+            </div>
+        </div>
+
+        <div class="blurred-text">
+            <div class="text-container">
+                <table id="tabellaUtenti"></table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
