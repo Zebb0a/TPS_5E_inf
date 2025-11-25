@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <product>
+    <id>X1</id>
+    <title>Cappuccino alla Canapa</title>
+    <type>Bevanda</type>
+    <price>3.00</price>
+    <image>https://via.placeholder.com/200?text=Cappuccino+Canapa</image>
+  </product>
+  <product>
+    <id>X2</id>
+    <title>Cookie alla Canapa</title>
+    <type>Dolce</type>
+    <price>2.00</price>
+    <image>https://via.placeholder.com/200?text=Cookie+Canapa</image>
+  </product>
+  <product>
+    <id>X3</id>
+    <title>Latte alla Canapa</title>
+    <type>Bevanda</type>
+    <price>3.20</price>
+    <image>https://via.placeholder.com/200?text=Latte+Canapa</image>
+  </product>
+</products>

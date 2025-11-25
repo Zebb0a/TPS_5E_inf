@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Coffe-Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="layout">
+    <div id="contenuto">
+      <h1>Coffe-Shop </h1>
+
+      <h2>Prodotti da JSON</h2>
+      <div id="json-container" class="row"></div>
+
+      <h2>Prodotti da CSV</h2>
+      <div id="csv-container" class="row"></div>
+
+      <h2>Prodotti da XML</h2>
+      <div id="xml-container" class="row"></div>
+    </div>
+
+    <div id="carrello">
+      <h2>Carrello</h2>
+      <div id="lista-carrello"></div>
+      <h3 id="totale"></h3>
+      <div class="carrello-buttons">
+        <button onclick="stampaScontrino()">Stampa scontrino PDF</button>
+        <button onclick="svuotaCarrello()">Svuota carrello</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
