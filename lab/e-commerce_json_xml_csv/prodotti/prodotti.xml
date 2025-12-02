@@ -5,20 +5,20 @@
     <title>Cappuccino alla Canapa</title>
     <type>Bevanda</type>
     <price>3.00</price>
-    <image>https://via.placeholder.com/200?text=Cappuccino+Canapa</image>
+    <image>./img/cappuccino_canapa.jpg</image>
   </product>
   <product>
     <id>X2</id>
     <title>Cookie alla Canapa</title>
     <type>Dolce</type>
     <price>2.00</price>
-    <image>https://via.placeholder.com/200?text=Cookie+Canapa</image>
+    <image>./img/biscotti_canapa.jpg</image>
   </product>
   <product>
     <id>X3</id>
     <title>Latte alla Canapa</title>
     <type>Bevanda</type>
     <price>3.20</price>
-    <image>https://via.placeholder.com/200?text=Latte+Canapa</image>
+    <image>./img/latte_canapa.webp</image>
   </product>
 </products>

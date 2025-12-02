@@ -1,4 +1,4 @@
 id,title,type,price,image
-C1,Espresso alla Canapa,Beveranda,2.50,https://via.placeholder.com/200?text=Espresso+Canapa
-C2,Muffin alla Canapa,Dolce,2.80,https://via.placeholder.com/200?text=Muffin+Canapa
-C3,Frullato alla Canapa,Beveranda,4.50,https://via.placeholder.com/200?text=Frullato+Canapa
+C1,Canapa,canap,19.99,./img/canapa.webp
+C2,Muffin alla Canapa,Dolce,2.80,./img/muffin_canapa.webp
+C3,Frullato alla Canapa,Beveranda,4.50,./img/frullato_canapa.jpg   

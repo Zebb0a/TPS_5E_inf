@@ -4,20 +4,20 @@
     "title": "Caffè alla Canapa",
     "type": "Bevanda",
     "price": "3.50",
-    "image": "https://via.placeholder.com/200?text=Caffe+Canapa"
+    "image": "./img/caffè_canapa.webp"
   },
   {
     "id": "J2",
     "title": "Tisana Relax alla Canapa",
     "type": "Infuso",
     "price": "4.00",
-    "image": "https://via.placeholder.com/200?text=Tisana+Canapa"
+    "image": "./img/tisana_canapa.webp"
   },
   {
     "id": "J3",
     "title": "Brownie alla Canapa",
     "type": "Dolce",
     "price": "2.50",
-    "image": "https://via.placeholder.com/200?text=Brownie+Canapa"
+    "image": "./img/brownie_canapa.jpg"
   }
 ]
