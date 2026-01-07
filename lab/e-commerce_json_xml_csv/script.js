@@ -1,6 +1,6 @@
 let carrello = [];
 
-// --- Caricamento CSV ---
+//CSV
 function caricaCSV(it) {
   let richiesta = new XMLHttpRequest();
   richiesta.open("GET", "./prodotti/prodotti.csv", true);
@@ -27,7 +27,7 @@ function convertiCSV(CSV) {
   return prodotti;
 }
 
-// --- Caricamento JSON ---
+//JSON
 function caricaJSON(it) {
   let richiesta = new XMLHttpRequest();
   richiesta.open("GET", "./prodotti/prodotti.json", true);
@@ -39,7 +39,7 @@ function caricaJSON(it) {
   richiesta.send();
 }
 
-// --- Caricamento XML ---
+//XML
 function caricaXML(it) {
   let richiesta = new XMLHttpRequest();
   richiesta.open("GET", "./prodotti/prodotti.xml", true);
@@ -64,7 +64,7 @@ function caricaXML(it) {
   richiesta.send();
 }
 
-// --- Creazione card prodotto ---
+
 function creaCard(prodotto) {
   let card = document.createElement("div");
   card.className = "card";
@@ -92,7 +92,7 @@ function creaCard(prodotto) {
   return card;
 }
 
-// --- Mostra prodotti ---
+
 function mostraProdotti(listaProdotti, idContenitore) {
   let contenitore = document.getElementById(idContenitore);
   contenitore.innerHTML = "";
@@ -102,7 +102,7 @@ function mostraProdotti(listaProdotti, idContenitore) {
   }
 }
 
-// --- Aggiorna carrello ---
+
 function aggiornaCarrello() {
   let lista = document.getElementById("lista-carrello");
   let totaleEl = document.getElementById("totale");
@@ -124,7 +124,7 @@ function svuotaCarrello() {
   aggiornaCarrello();
 }
 
-// --- Stampa con window.print ---
+
 function stampaScontrino() {
   let contenuto = "<h1>Scontrino</h1>";
   let totale = 0;
@@ -161,3 +161,4 @@ window.onload = function () {
     mostraProdotti(prodottiXML, "xml-container");
   });
 };
+
