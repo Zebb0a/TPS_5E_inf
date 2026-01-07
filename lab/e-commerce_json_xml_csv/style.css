@@ -1,6 +1,17 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: rgb(142, 202, 51);
+}
+
+h1{
+  color: navajowhite;
+  text-shadow: 3px 3px #000000;
+}
+
+h2{
+  color: #11cb7b;
+  text-shadow: 3px 3px #000000;
 }
 
 #layout {
@@ -9,7 +20,7 @@ body {
 }
 
 #contenuto {
-  flex: 1; /* occupa lo spazio a sinistra */
+  flex: 1;
   padding: 20px;
   text-align: center;
 }
@@ -22,7 +33,7 @@ body {
 }
 
 .card { 
-  border: 1px solid #ccc; 
+  border: 1px solid #000000; 
   padding: 10px;
   margin: 10px;
   width: 200px;
@@ -36,8 +47,8 @@ body {
 
 #carrello {
   width: 300px;
-  background: #f9f9f9;
-  border-left: 2px solid #ccc;
+  background: #18a769;
+  border-left: 2px solid #ff0000;
   padding: 15px;
   display: flex;
   flex-direction: column;
