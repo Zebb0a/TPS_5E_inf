@@ -1,6 +1,6 @@
 var carrello = [];
 
-// --- Caricamento CSV ---
+//CSV
 function caricaCSV(callback) {
   var richiesta = new XMLHttpRequest();
   richiesta.open("GET", "./prodotti/prodotti.csv", true);
@@ -27,7 +27,7 @@ function convertiCSV(testoCSV) {
   return prodotti;
 }
 
-// --- Caricamento JSON ---
+//JSON
 function caricaJSON(callback) {
   var richiesta = new XMLHttpRequest();
   richiesta.open("GET", "./prodotti/prodotti.json", true);
@@ -39,7 +39,7 @@ function caricaJSON(callback) {
   richiesta.send();
 }
 
-// --- Caricamento XML ---
+//XML
 function caricaXML(callback) {
   var richiesta = new XMLHttpRequest();
   richiesta.open("GET", "./prodotti/prodotti.xml", true);
@@ -64,7 +64,7 @@ function caricaXML(callback) {
   richiesta.send();
 }
 
-// --- Creazione card prodotto ---
+//card
 function creaCard(prodotto) {
   var card = document.createElement("div");
   card.className = "card";
@@ -92,7 +92,7 @@ function creaCard(prodotto) {
   return card;
 }
 
-// --- Mostra prodotti ---
+//prod
 function mostraProdotti(listaProdotti, idContenitore) {
   var contenitore = document.getElementById(idContenitore);
   contenitore.innerHTML = "";
@@ -102,7 +102,7 @@ function mostraProdotti(listaProdotti, idContenitore) {
   }
 }
 
-// --- Aggiorna carrello ---
+//carrello
 function aggiornaCarrello() {
   var lista = document.getElementById("lista-carrello");
   var totaleEl = document.getElementById("totale");
@@ -124,7 +124,7 @@ function svuotaCarrello() {
   aggiornaCarrello();
 }
 
-// --- Stampa con window.print ---
+//stamp
 function stampaScontrino() {
   var contenuto = "<h1>Scontrino</h1>";
   var totale = 0;
@@ -146,7 +146,7 @@ function stampaScontrino() {
   finestraStampa.print();
 }
 
-// --- Avvio diretto ---
+
 window.onload = function () {
   caricaJSON(function (prodottiJSON) {
     mostraProdotti(prodottiJSON, "json-container");
@@ -161,3 +161,4 @@ window.onload = function () {
     mostraProdotti(prodottiXML, "xml-container");
   });
 };
+
