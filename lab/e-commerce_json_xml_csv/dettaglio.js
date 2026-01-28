@@ -28,11 +28,12 @@ window.onload = function() {
         html += "<div class='testi'>";
         html += "<h2>" + tit + "</h2>";
         html += "<div class='prezzo'>" + prz + " €</div>";
-        html += "<p class='info'>Questo prodotto rappresenta l'eccellenza della nostra selezione. Ogni chicco viene scelto con cura per offrirti un'esperienza sensoriale unica, tipica della tradizione del nostro Coffee Shop. La tostatura artigianale ne esalta le note aromatiche, rendendolo ideale per chi cerca un gusto intenso e persistente.</p>";
+        html += "<p class='info'>questa è un esempio di descrizione che descrive il prodotto</p>";
         html += "</div>";
 
         divContenuto.innerHTML = html;
     } else {
         document.getElementById("contenuto").innerHTML = "<h2>Dati non trovati.</h2>";
     }
+
 };
