@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Shop - Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="div1">
+        <h1>Coffee Shop</h1>
+        <nav>
+            <a href="carrello.html">Prodotti carrello <span id="cart-count">0</span></a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <section>
+            <h2>Prodotti da JSON</h2>
+            <div id="json-container" class="product-grid"></div>
+        </section>
+
+        <section>
+            <h2>Prodotti da CSV</h2>
+            <div id="csv-container" class="product-grid"></div>
+        </section>
+
+        <section>
+            <h2>Prodotti da XML</h2>
+            <div id="xml-container" class="product-grid"></div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
