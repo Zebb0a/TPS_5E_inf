@@ -15,9 +15,9 @@ window.onload = function() {
         var p = JSON.parse(dati);
         var divContenuto = document.getElementById("contenuto");
 
-        var img = p.immagine || p.image;
-        var tit = p.titolo || p.title;
-        var prz = p.prezzo || p.price;
+        var img = p.image;
+        var tit = p.title;
+        var prz = p.price;
 
         var html = "";
             
@@ -37,4 +37,5 @@ window.onload = function() {
     }
 
 };
+
 
