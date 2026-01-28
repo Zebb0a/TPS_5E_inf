@@ -1,8 +1,8 @@
 window.onload = function() {
     var carrelloGre = localStorage.getItem("carrello");
     var n = 0;
-    if (carrelloGre != null) { 
-        n = JSON.parse(carrelloGre).length; 
+    if (carrel != null) { 
+        n = JSON.parse(carrel).length; 
     }
     var el = document.getElementById("cart-count");
     if (el != null) { 
@@ -37,3 +37,4 @@ window.onload = function() {
     }
 
 };
+
