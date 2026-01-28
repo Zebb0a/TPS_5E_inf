@@ -167,12 +167,13 @@ function stampa() {
   }
   foglio += "<hr><h3>Totale: €" + totale.toFixed(2) + "</h3>";
 
-  var popup = window.open("", "PRINT", "height=600,width=400");
-  popup.document.write("<html><head><title>Scontrino</title></head><body>");
-  popup.document.write(foglio);
-  popup.document.write("</body></html>");
-  popup.document.close();
-  popup.focus();
-  popup.print();
-  popup.close();
+  var vr = window.open("", "PRINT", "height=600,width=400");
+  vr.document.write("<html><head><title>Scontrino</title></head><body>");
+  vr.document.write(foglio);
+  vr.document.write("</body></html>");
+  vr.document.close();
+  vr.focus();
+  vr.print();
+  vr.close();
+
 }
