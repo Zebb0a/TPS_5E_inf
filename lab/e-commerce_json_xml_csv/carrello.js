@@ -4,7 +4,7 @@ window.onload = function () {
 
 function mostra() {
   var scatola = document.getElementById("oggetti");
-  var totaleDoc = document.getElementById("prezzoTot");
+  var totalePrez = document.getElementById("prezzoTot");
   var dati = localStorage.getItem("carrello");
   var lista = [];
 
@@ -92,7 +92,7 @@ function mostra() {
       scatola.appendChild(riga);
     }
   }
-  totaleDoc.innerText = somma.toFixed(2);
+  totalePrez.innerText = somma.toFixed(2);
 }
 
 function cambia(prodotto, azione) {
@@ -177,3 +177,4 @@ function stampa() {
   vr.close();
 
 }
+
