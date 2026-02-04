@@ -1,8 +1,8 @@
 window.onload = function() {
     var carrelloGre = localStorage.getItem("carrello");
     var n = 0;
-    if (carrel != null) { 
-        n = JSON.parse(carrel).length; 
+    if (carrelloGre != null) { 
+        n = JSON.parse(carrelloGre).length; 
     }
     var el = document.getElementById("cart-count");
     if (el != null) { 
@@ -28,15 +28,11 @@ window.onload = function() {
         html += "<div class='testi'>";
         html += "<h2>" + tit + "</h2>";
         html += "<div class='prezzo'>" + prz + " €</div>";
-        html += "<p class='info'>questa è un esempio di descrizione che descrive il prodotto</p>";
+        html += "<p class='info'>Info</p>";
         html += "</div>";
 
         divContenuto.innerHTML = html;
     } else {
         document.getElementById("contenuto").innerHTML = "<h2>Dati non trovati.</h2>";
     }
-
 };
-
-
-
