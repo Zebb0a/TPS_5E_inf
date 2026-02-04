@@ -1,8 +1,8 @@
 window.onload = function() {
-    var carrelloGre = localStorage.getItem("carrello");
+    var carrello = localStorage.getItem("carrello");
     var n = 0;
-    if (carrelloGre != null) { 
-        n = JSON.parse(carrelloGre).length; 
+    if (carrello != null) { 
+        n = JSON.parse(carrello).length; 
     }
     var el = document.getElementById("cart-count");
     if (el != null) { 
@@ -36,3 +36,4 @@ window.onload = function() {
         document.getElementById("contenuto").innerHTML = "<h2>Dati non trovati.</h2>";
     }
 };
+
